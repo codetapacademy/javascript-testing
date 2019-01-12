@@ -6,10 +6,12 @@ const substractNumbers = (a, b) => a - b
 // create a simple test for sumNumbers function
 const sumResultList = [
   sumNumbers(2, 5),
+  sumNumbers(2, 5, 9),
   sumNumbers(8, 5)
 ]
 const sumExpected = [
   7,
+  16,
   13
 ]
 
