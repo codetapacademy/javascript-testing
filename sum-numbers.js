@@ -8,3 +8,10 @@ const sumExpected = 7
 if (sumResult !== sumExpected) {
   throw new Error(`${sumResult} is not equal to ${sumExpected}`)
 }
+
+const substrctResult = substractNumbers(8, 3)
+const substractExpected = 5
+
+if (substrctResult !== substractExpected) {
+  throw new Error(`${substrctResult} is not equal to ${substractExpected}`)
+}
