@@ -10,7 +10,7 @@ const sumResultList = [
 ]
 const sumExpected = [
   7,
-  14
+  13
 ]
 
 sumResultList.map((sumResult, key) => {
