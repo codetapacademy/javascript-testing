@@ -1,4 +1,4 @@
-const sumNumbers = (a, b) => a + b
+const sumNumbers = (a, b, c = 0) => a + b + c
 
 const substractNumbers = (a, b) => a - b
 
