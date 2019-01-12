@@ -1,5 +1,7 @@
 const sumNumbers = (a, b) => a + b
 
+const substractNumbers = (a, b) => a - b
+
 
 // create a simple test for sumNumbers function
 const sumResult = sumNumbers(2, 5)
