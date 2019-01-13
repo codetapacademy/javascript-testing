@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
+    "flow": "flow",
     "babel-node": "babel-node --presets=@babel/env",
     "start": "nodemon --exec npm run babel-node -- ./index.js",
     "format": "prettier --write \"**/*.+(js,jsx,json,css,less,sass,yml,yaml,ts,tsx,md,mdx,graphql,vue)\""
@@ -21,6 +22,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^3.4.0",
+    "flow-bin": "^0.90.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.3"
   },
