@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --watchAll",
     "babel-node": "babel-node --presets=@babel/env",
-    "start": "nodemon --exec npm run babel-node -- ./index.js"
+    "start": "nodemon --exec npm run babel-node -- ./index.js",
+    "format": "prettier --write \"**/*.+(js,jsx,json,css,less,sass,yml,yaml,ts,tsx,md,mdx,graphql,vue)\""
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,9 @@
     "@babel/preset-env": "^7.2.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
-    "jest": "^23.6.0"
+    "eslint": "^5.12.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3"
   },
   "babel": {
     "presets": [
