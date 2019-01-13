@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "babel-node": "babel-node --presets=@babel/env",
+    "start": "nodemon --exec npm run babel-node -- ./index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "jest": "^23.6.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ]
   }
 }

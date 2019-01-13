@@ -2,7 +2,8 @@ const sumNumbers = (...numberList) => numberList.length ? numberList.reduce((a, 
 
 const substractNumbers = (a, b) => a - b
 
-export default {
+export {
   sumNumbers,
   substractNumbers
 }
+
