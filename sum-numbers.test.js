@@ -1,4 +1,4 @@
-/** global: test */
+/* global test */
 import { sumNumbers, substractNumbers } from "./sum-numbers";
 // import { test, expect } from './global-test'
 // Clear console
