@@ -1,4 +1,7 @@
 import { sumNumbers, substractNumbers } from './sum-numbers'
+// Clear console
+// process.stdout.write("\033c");
+process.stdout.write("\x1Bc");
 
 const expect = result => ({
   toBe: expected => {
@@ -20,7 +23,7 @@ const test = (title, callback) => {
   }
 }
 
-const testSumNumbers = () => {
+test('test sumNumbers function', () => {
   // create a simple test for sumNumbers function
   const sumResultList = [
     sumNumbers(),
@@ -44,16 +47,12 @@ const testSumNumbers = () => {
   sumResultList.map((sumResult, key) => {
     expect(sumResult).toBe(sumExpected[key])
   })
-}
-
-const testSubstractNumbers = () => {
+})
+test('test testSubstractNumbers function', () => {
   // create a simple test for substractNumbers function
   const substrctResult = substractNumbers(8, 3)
   const substractExpected = 5
   
   expect(substrctResult).toBe(substractExpected);
-}
-
-test('test sumNumbers function', testSumNumbers)
-test('test testSubstractNumbers function', testSubstractNumbers)
+})
 
