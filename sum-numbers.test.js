@@ -13,9 +13,9 @@ const expect = result => ({
   toBeGreaterThan: expected => {}
 })
 
-const test = (title, callback) => {
+const test = async (title, callback) => {
   try {
-    callback();
+    await callback();
     console.log(`✓ ${title}`)
   } catch (error) {
     console.error(`× ${title}`)
@@ -23,16 +23,16 @@ const test = (title, callback) => {
   }
 }
 
-test('test sumNumbers function', () => {
+test('test sumNumbers function', async () => {
   // create a simple test for sumNumbers function
   const sumResultList = [
-    sumNumbers(),
-    sumNumbers(3),
-    sumNumbers(2, 5),
-    sumNumbers(2, 5, 9, 8, 1, 3, 7, 3, 10),
-    sumNumbers(2, 5, 9, 8, 1, 3),
-    sumNumbers(2, 5, 9),
-    sumNumbers(8, 5)
+    await sumNumbers(),
+    await sumNumbers(3),
+    await sumNumbers(2, 5),
+    await sumNumbers(2, 5, 9, 8, 1, 3, 7, 3, 10),
+    await sumNumbers(2, 5, 9, 8, 1, 3),
+    await sumNumbers(2, 5, 9),
+    await sumNumbers(8, 5)
   ]
   const sumExpected = [
     0,
@@ -48,9 +48,9 @@ test('test sumNumbers function', () => {
     expect(sumResult).toBe(sumExpected[key])
   })
 })
-test('test testSubstractNumbers function', () => {
+test('test testSubstractNumbers function', async () => {
   // create a simple test for substractNumbers function
-  const substrctResult = substractNumbers(8, 3)
+  const substrctResult = await substractNumbers(8, 3)
   const substractExpected = 5
   
   expect(substrctResult).toBe(substractExpected);
