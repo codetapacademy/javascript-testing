@@ -5,7 +5,9 @@ const expect = result => ({
     if (result !== expected) {
       throw new Error(`${result} is not equal to ${expected}`)
     }
-  }
+  },
+  toEqual: expected => {},
+  toBeGreaterThan: expected => {}
 })
 
 // create a simple test for sumNumbers function
