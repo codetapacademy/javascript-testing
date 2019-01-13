@@ -5,7 +5,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "esling-config-prettier"
+    "eslint-config-prettier"
   ],
   "rules": {
     "valid-typeof": "error"
