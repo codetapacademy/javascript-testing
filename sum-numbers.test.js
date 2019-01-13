@@ -27,9 +27,6 @@ sumResultList.map((sumResult, key) => {
   }
 })
 
-// if (sumResult !== sumExpected) {
-// }
-
 const substrctResult = substractNumbers(8, 3)
 const substractExpected = 5
 
