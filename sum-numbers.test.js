@@ -1,5 +1,12 @@
 import { sumNumbers, substractNumbers } from './sum-numbers'
 
+const expect = result => ({
+  toBe: expected => {
+    if (result !== expected) {
+      throw new Error(`${result} is not equal to ${expected}`)
+    }
+  }
+})
 
 // create a simple test for sumNumbers function
 const sumResultList = [
@@ -22,14 +29,12 @@ const sumExpected = [
 ]
 
 sumResultList.map((sumResult, key) => {
-  if (sumResult !== sumExpected[key]) {
-    throw new Error(`${sumResult} is not equal to ${sumExpected[key]}`)
-  }
+  expect(sumResult).toBe(sumExpected[key])
 })
 
+
+// create a simple test for substractNumbers function
 const substrctResult = substractNumbers(8, 3)
 const substractExpected = 5
 
-if (substrctResult !== substractExpected) {
-  throw new Error(`${substrctResult} is not equal to ${substractExpected}`)
-}
+expect(substrctResult).toBe(substractExpected);
