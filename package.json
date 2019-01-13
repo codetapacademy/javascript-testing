@@ -8,7 +8,10 @@
     "flow": "flow",
     "babel-node": "babel-node --presets=@babel/env",
     "start": "nodemon --exec npm run babel-node -- ./index.js",
-    "format": "prettier --write \"**/*.+(js,jsx,json,css,less,sass,yml,yaml,ts,tsx,md,mdx,graphql,vue)\""
+    "prettier": "prettier \"**/*.+(js|jsx|json|css|less|sass|yml|yaml|ts|tsx|md|mdx|graphql|vue)\"",
+    "lint": "eslint src",
+    "validate": "npm run lint && npm run format && npm run flow",
+    "format": "npm run prettier -- --write"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,7 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^3.4.0",
