@@ -1,8 +1,8 @@
 import { sumNumbers, substractNumbers } from './sum-numbers'
-import { test, expect } from './global-test'
+// import { test, expect } from './global-test'
 // Clear console
 // process.stdout.write("\033c");
-process.stdout.write("\x1Bc");
+// process.stdout.write("\x1Bc");
 
 test('test sumNumbers function', async () => {
   // create a simple test for sumNumbers function
