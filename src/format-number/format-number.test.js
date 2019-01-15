@@ -13,3 +13,5 @@ describe("Format numbers", () => {
     expect(result).toBe(expected)
   })
 })
+
+console.log(window)
