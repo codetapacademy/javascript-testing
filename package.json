@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "flow": "flow",
     "babel-node": "babel-node --presets=@babel/env",
     "start": "nodemon --exec npm run babel-node -- ./index.js",
     "prettier": "prettier \"**/*.+(js|jsx|json|css|less|sass|yml|yaml|ts|tsx|md|mdx|graphql|vue)\"",
     "lint": "eslint src",
-    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
+    "validate": "npm run lint && npm run test && npm run prettier -- --list-different && npm run flow",
     "format": "npm run prettier -- --write",
     "precommit": "lint-staged && npm run flow"
   },
