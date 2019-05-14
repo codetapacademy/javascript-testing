@@ -1,6 +1,6 @@
 export const printName = (...argList) => {
   if (argList.length) {
-    return 'Marian Zburlea'
+    return `${argList[0]} ${argList[1]}`.trim()
   }
   return ''
 }

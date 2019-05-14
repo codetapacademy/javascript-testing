@@ -27,6 +27,6 @@ describe('Prints the full name', () => {
     const resultList = nameList
       .map(({ firstName, lastName }) => printName(firstName, lastName))
 
-    expect(resultList).toBe(expectedList)
+    expect(resultList).toEqual(expectedList)
   })
 })
