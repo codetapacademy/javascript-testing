@@ -9,12 +9,24 @@ describe('Prints the full name', () => {
   })
 
   it('should return firstName and lastName', () => {
-    const firstName = 'Marian'
-    const lastName = 'Zburlea'
-    const expected = 'Marian Zburlea'
+    const nameList = [
+      {
+        firstName: 'Marian',
+        lastName: 'Zburlea'
+      },
+      {
+        firstName: 'Gratiela',
+        lastName: 'Zburlea'
+      }
+    ]
+    const expectedList = [
+      'Marian Zburlea',
+      'Gratiela Zburlea',
+    ]
 
-    const result = printName(firstName, lastName)
+    const resultList = nameList
+      .map(({ firstName, lastName }) => printName(firstName, lastName))
 
-    expect(result).toBe(expected)
+    expect(resultList).toBe(expectedList)
   })
 })
