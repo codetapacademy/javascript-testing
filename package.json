@@ -54,9 +54,14 @@
   },
   "lint-staged": {
     "linters": {
-      "*.{js,scss}": ["npm run prettier", "git add"]
+      "*.{js,scss}": [
+        "npm run prettier",
+        "git add"
+      ]
     },
-    "ignore": ["**/dist/*.min.js"],
+    "ignore": [
+      "**/dist/*.min.js"
+    ],
     "env": {
       "jest": true
     }
