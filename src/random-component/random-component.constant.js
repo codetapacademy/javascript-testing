@@ -1,0 +1,1 @@
+export const CREATE_COURSE = 'random-component.CREATE_COURSE'
