@@ -1,1 +1,6 @@
-{}
+{
+  "baseUrl": "https://codetap.academy",
+  "integrationFolder": "cypress/e2e",
+  "viewportHeight": 720,
+  "viewportWidth": 1280
+}

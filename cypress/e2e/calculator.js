@@ -2,7 +2,7 @@ const user = cy
 describe('awesome e learning', () => {
   it('shows tutorials and courses', () => {
     user
-      .visit('https://codetap.academy')
+      .visit('/')
       .get(':nth-child(1) > .sc-fjdhpX > .sc-ckVGcZ')
       .click()
       .wait(1500)
