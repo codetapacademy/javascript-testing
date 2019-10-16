@@ -3,6 +3,7 @@ import util from '.'
 describe('getGender()', () => {
   it('should return male', () => {
     jest.spyOn(util, 'getGender')
+
     // mock getGender function
     const originalGetGender = util.getGender
     util.getGender = util.getGender.mockImplementation((male, female) => 'male')

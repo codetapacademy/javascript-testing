@@ -1,2 +1,4 @@
 node_modules
 .vscode
+cypress/videos
+cypress/screeshots

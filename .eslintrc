@@ -8,11 +8,15 @@
     "eslint:recommended",
     "eslint-config-prettier"
   ],
+  "plugins": [
+    "eslint-plugin-cypress"
+  ],
   "rules": {
     "valid-typeof": "error"
   },
   "env": {
     "browser": true,
-    "jest": true
+    "jest": true,
+    "cypress/global": true
   }
 }
